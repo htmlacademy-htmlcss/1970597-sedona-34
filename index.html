@@ -110,13 +110,44 @@
         <h3>Подпишитесь на рассылку</h3>
         <p class="subscribe-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="text" name="email" placeholder="Ваш e-mail">
-            <button class="button" type="submit">Подписаться!</button>
+            <label for="email" class="visually-hidden">E-mail</label>
+            <input class="field" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
+            <button class="button subscribe-button" type="submit">Подписаться!</button>
         </form>
       </section>
       
-      <!-- <section class="footer-socials">
-      </section> -->
+      <section class="footer-socials">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <ul class="footer-socials-list">
+          <li class="footer-socials-item">
+            <a class="button socials-button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a class="button socials-button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a class="button socials-button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-phone">
+        <h3 class="visually-hidden">Номер телефона</h3>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+
+      <section class="academy-address">
+        <h3 class="visually-hidden">Адрес HTML Academy</h3>
+        <a class="academy-address-link" href="https://htmlacademy.ru/">
+          <img class="academy-logo" src="#" alt="Логотип HTML Academy.">
+        </a>
+      </section>
 
     </footer>
 

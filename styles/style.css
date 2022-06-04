@@ -24,6 +24,9 @@ body{
 }
 
 /* Header navigation */
+.main-nav-list, .nav-user{
+  list-style: none;
+}
 .main-nav-link{
   font-weight: 700;
   font-size: 20px;

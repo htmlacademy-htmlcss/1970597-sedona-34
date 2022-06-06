@@ -18,6 +18,7 @@ body{
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
+  font-weight: 400;
   font-style: normal;
   color: #000000;
   background-color: #FFFFFF;
@@ -65,7 +66,6 @@ body{
 }
 
 .description-reasons{
-  font-weight: 400;
   text-align: center;
   color: #333333;
 }
@@ -90,7 +90,6 @@ body{
 }
 
 .advantages-description, .advantages-number{
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -99,7 +98,6 @@ body{
 
 .advantages-point-housing, .advantages-point-souvenirs{
   background-color: rgba(131, 179, 211, 0.12);
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -107,7 +105,6 @@ body{
 
 .advantages-point-food{
   background-color: #FFFFFF;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -165,7 +162,6 @@ body{
 }
 
 .subscribe-text{
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -197,7 +193,6 @@ body{
 
 ol.breadcrumbs{
   list-style: none;
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
@@ -210,15 +205,13 @@ ol.breadcrumbs{
 }
 
 .control-input{
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .button-apply{
+  font-family: inherit;
   background: #82B3D3;
-  width: 160.45px;
-  height: 48px;
   color: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -228,14 +221,21 @@ ol.breadcrumbs{
 }
 
 .button-reset{
+  font-family: inherit;
   background:none;
   border:none;
   cursor: pointer;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: inherit;
+}
+
+.select-control{
+  font-family: inherit;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* Раздел с результатами поиска */
@@ -261,7 +261,6 @@ ol.breadcrumbs{
 }
 
 .hotel-type, .product-card-price{
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color:#333333;
@@ -282,7 +281,6 @@ ol.breadcrumbs{
 .hotel-rating{
   background: #F2F2F2;
   border-radius: 4px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -317,7 +315,6 @@ ol.breadcrumbs{
 }
 
 .hotels-on-page-text{
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
@@ -331,7 +328,6 @@ ol.breadcrumbs{
 }
 
 .subscribe-text-catalog{
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;

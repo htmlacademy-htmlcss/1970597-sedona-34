@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/* Header navigation */
+.main-nav-list, .nav-user{
+  list-style: none;
+}
+.main-nav-link{
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  color: inherit;
+}
+
+.nav-user-want{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.welcome{
+  background-image: url(../images/index-background.jpg), url(../images/divider.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: grey;
+  background-color: #ffffff;
+}
+
+/* Описание */
+.description-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.description-reasons{
+  text-align: center;
+  color: #333333;
+}
+
+/* Причины */
+.advantages-list{
+  list-style: none;
+  text-align: center;
+}
+
+.advantages-item-block{
+  background-color: #82B3D3;
+  color:#ffffff;
+}
+
+.advantages-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description, .advantages-number{
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+}
+
+.advantages-point-housing, .advantages-point-souvenirs{
+  background-color: rgba(131, 179, 211, 0.12);
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-point-food{
+  background-color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-point-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-item-square, .advantages-item-tourists{
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-road{
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.hotel-search-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-search-instruction{
+  text-align: center;
+}
+
+.hotel-search-link{
+  background-color: #756157;
+  color:#FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscribe{
+  background-image:url(../images/background-blur.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.subscribe-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscribe-text{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer-contacts-phone{
+  color:#000000;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Стили каталога */
+.inner-header{
+  background-image: url("../images/filter-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  /* Цвет для того, чтобы видеть где заканчивается контейнер */
+  background-color: rgba(5, 23, 35, 0.5);
+}
+.inner-header-title{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+ol.breadcrumbs{
+  list-style: none;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.hotel-filter-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.control-input{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-apply{
+  font-family: inherit;
+  background: #82B3D3;
+  color: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-reset{
+  font-family: inherit;
+  background:none;
+  border:none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: inherit;
+}
+
+.select-control{
+  font-family: inherit;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* Раздел с результатами поиска */
+
+.search-results-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hotel-list{
+  list-style: none;
+}
+
+.product-card-title-link{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color:#000000;
+  text-decoration: none;
+}
+
+.hotel-type, .product-card-price{
+  font-size: 18px;
+  line-height: 21px;
+  color:#333333;
+}
+
+.hotel-card-information-about{
+  background-color: #756157;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color:#FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hotel-rating{
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination-list{
+  list-style: none;
+}
+
+.pagination-link{
+  background-color:#82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+  color:#FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.pagination-current{
+  background-color:#F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  color:#000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.hotels-on-page-text{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.subscribe-title-catalog{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscribe-text-catalog{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color:#333333;
+}
+

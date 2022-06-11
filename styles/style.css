@@ -38,9 +38,24 @@ body{
 }
 
 /* Header navigation */
+.main-nav{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .main-nav-list, .nav-user{
+  margin: 0;
+  padding: 0;
+  width: 430px;
   list-style: none;
 }
+
+.nav-user{
+  max-width: 250px;
+  margin-left: auto;
+}
+
 .main-nav-link{
   font-weight: 700;
   font-size: 20px;
@@ -61,12 +76,25 @@ body{
   background-color: #756157;
 }
 
+/* Стили для главной части */
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-img{
+  display: block;
+  margin: 0 auto;
+}
+
 .welcome{
   background-image: url(../images/index-background.jpg), url(../images/divider.svg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: grey;
   background-color: #ffffff;
+  height: 485px;
 }
 
 /* Описание */
@@ -85,14 +113,22 @@ body{
 
 /* Причины */
 .advantages-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
   list-style: none;
   text-align: center;
 }
 
 .advantages-item-block{
+  margin: 0;
+  padding: 0;
   background-color: #82B3D3;
   color:#ffffff;
+  width: 400px;
 }
+
 
 .advantages-title{
   font-weight: 700;

@@ -248,6 +248,16 @@ body{
   text-transform: uppercase;
 }
 
+/* Флексы для футера */
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* Стили каталога */
 .inner-header{
   background-image: url("../images/filter-background.jpg");

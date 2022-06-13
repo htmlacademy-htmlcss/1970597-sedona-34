@@ -306,7 +306,9 @@ ol.breadcrumbs{
 .hotel-filter-buttons{
   display: flex;
   flex-direction: column;
+  justify-content: center
 }
+
 .button-apply{
   font-family: inherit;
   background: #82B3D3;

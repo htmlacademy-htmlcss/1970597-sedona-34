@@ -77,6 +77,11 @@ body{
   background-color: #756157;
 }
 
+.main-logo-link{
+  width: 139px;
+  margin-right: 30px;
+}
+
 /* Стили для главной части */
 
 .page-container{
@@ -279,6 +284,13 @@ ol.breadcrumbs{
   line-height: 21px;
 }
 
+.catalog-filter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 35px 70px 70px 70px;
+}
 .hotel-filter-title{
   font-weight: 700;
   font-size: 20px;
@@ -291,6 +303,10 @@ ol.breadcrumbs{
   line-height: 21px;
 }
 
+.hotel-filter-buttons{
+  display: flex;
+  flex-direction: column;
+}
 .button-apply{
   font-family: inherit;
   background: #82B3D3;
@@ -300,6 +316,7 @@ ol.breadcrumbs{
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  height: 48px;
 }
 
 .button-reset{
@@ -311,6 +328,7 @@ ol.breadcrumbs{
   line-height: 20px;
   text-align: center;
   color: inherit;
+  height: 48px;
 }
 
 .select-control{

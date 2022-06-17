@@ -136,18 +136,20 @@ body{
 .advantages-item{
   display: flex;
   flex-direction: row;
-}
-
-.advantages-item-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .advantages-reason{
   width: 400px;
 }
-
+.advantages-reason-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
 .advantages-item-block{
   margin: 0;
   padding: 0;
@@ -306,7 +308,9 @@ ol.breadcrumbs{
 .hotel-filter-buttons{
   display: flex;
   flex-direction: column;
+  justify-content: center
 }
+
 .button-apply{
   font-family: inherit;
   background: #82B3D3;

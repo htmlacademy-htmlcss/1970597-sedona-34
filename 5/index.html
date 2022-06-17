@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="page-container">
   <header class="page-header">
     <nav class="main-nav">
       <a class="main-logo-link" href="#"><img class="main-logo" src="images/main-logo.svg" width="139" height="70"
@@ -44,7 +45,7 @@
 
   <!-- Обертка для главной части -->
   <main class="main-container main-index">
-    <div class="page-container">
+
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
         <img class="welcome-img" src="images/welcome-img.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
@@ -63,20 +64,25 @@
               <p class="advantages-description">Седона — не аттракцион для <br> туристов, там течёт своя жизнь</p>
             </div>
             <img class="advantages-photo" src="images/street.jpg" width="800" height="384" alt="Город Седона.">
-          <li class="advantages-item-housing advantages-reason">
-            <h4 class="advantages-point-title">Жильё</h4>
-            <p class="advantages-point-description">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
-          </li>
-          <li class="advantages-item-food advantages-reason">
-            <h4 class="advantages-point-title">Еда</h4>
-            <p class="advantages-point-description">Всегда заказывайте <br> топовый фирменный бургер,<br> вы не
-              разочаруетесь!</p>
-          </li>
-          <li class="advantages-item-souvenirs advantages-reason">
-            <h4 class="advantages-point-title">Сувениры</h4>
-            <p class="advantages-point-description">Не только китайского, <br> но и настоящего местного <br>
-              производства!</p>
-          </li>
+
+            <ul class="advantages-reason-list">
+              <li class="advantages-item-housing advantages-reason">
+                <h4 class="advantages-point-title">Жильё</h4>
+                <p class="advantages-point-description">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!
+                </p>
+              </li>
+              <li class="advantages-item-food advantages-reason">
+                <h4 class="advantages-point-title">Еда</h4>
+                <p class="advantages-point-description">Всегда заказывайте <br> топовый фирменный бургер,<br> вы не
+                  разочаруетесь!</p>
+              </li>
+              <li class="advantages-item-souvenirs advantages-reason">
+                <h4 class="advantages-point-title">Сувениры</h4>
+                <p class="advantages-point-description">Не только китайского, <br> но и настоящего местного <br>
+                  производства!</p>
+              </li>
+            </ul>
+
           <li class="advantages-item">
             <img class="advantages-photo" src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола.">
             <div class="advantages-item-block">
@@ -120,7 +126,7 @@
           <button class="button subscribe-button" type="submit">Подписаться!</button>
         </form>
       </section>
-    </div>
+
   </main>
 
   <footer class="page-footer">
@@ -149,6 +155,7 @@
       </a>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>

@@ -41,8 +41,6 @@ body{
 .main-nav{
   display: flex;
   justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .main-nav-list, .nav-user{
@@ -257,12 +255,10 @@ body{
 
 /* Флексы для футера */
 
-.page-footer-container {
+.page-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 /* Стили каталога */

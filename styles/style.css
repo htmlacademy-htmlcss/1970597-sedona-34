@@ -14,20 +14,47 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+
+}
+
 body{
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   font-style: normal;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+
+.main-container{
+  flex-grow: 1;
 }
 
 /* Header navigation */
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-nav-list, .nav-user{
+  margin: 0;
+  padding: 0;
+  width: 430px;
   list-style: none;
 }
+
+.nav-user{
+  max-width: 250px;
+  margin-left: auto;
+}
+
 .main-nav-link{
   font-weight: 700;
   font-size: 20px;
@@ -48,12 +75,30 @@ body{
   background-color: #756157;
 }
 
+.main-logo-link{
+  width: 139px;
+  margin-right: 30px;
+}
+
+/* Стили для главной части */
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-img{
+  display: block;
+  margin: 0 auto;
+}
+
 .welcome{
   background-image: url(../images/index-background.jpg), url(../images/divider.svg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: grey;
   background-color: #ffffff;
+  height: 485px;
 }
 
 /* Описание */
@@ -72,13 +117,43 @@ body{
 
 /* Причины */
 .advantages-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style: none;
   text-align: center;
 }
 
+.advantages-point{
+  width: 400px;
+}
+
+.advantages-item{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.advantages-reason{
+  width: 400px;
+}
+.advantages-reason-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
 .advantages-item-block{
+  margin: 0;
+  padding: 0;
   background-color: #82B3D3;
   color:#ffffff;
+  width: 400px;
 }
 
 .advantages-title{
@@ -96,14 +171,14 @@ body{
 
 }
 
-.advantages-point-housing, .advantages-point-souvenirs{
+.advantages-item-housing, .advantages-item-souvenirs{
   background-color: rgba(131, 179, 211, 0.12);
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
 
-.advantages-point-food{
+.advantages-item-food{
   background-color: #FFFFFF;
   font-size: 18px;
   line-height: 21px;
@@ -117,6 +192,8 @@ body{
   text-align: center;
   text-transform: uppercase;
 }
+
+
 
 .advantages-item-square, .advantages-item-tourists{
   background-color: rgba(131, 179, 211, 0.12);
@@ -176,6 +253,14 @@ body{
   text-transform: uppercase;
 }
 
+/* Флексы для футера */
+
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* Стили каталога */
 .inner-header{
   background-image: url("../images/filter-background.jpg");
@@ -197,6 +282,13 @@ ol.breadcrumbs{
   line-height: 21px;
 }
 
+.catalog-filter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 35px 70px 70px 70px;
+}
 .hotel-filter-title{
   font-weight: 700;
   font-size: 20px;
@@ -209,6 +301,12 @@ ol.breadcrumbs{
   line-height: 21px;
 }
 
+.hotel-filter-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
 .button-apply{
   font-family: inherit;
   background: #82B3D3;
@@ -218,6 +316,7 @@ ol.breadcrumbs{
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  height: 48px;
 }
 
 .button-reset{
@@ -229,6 +328,7 @@ ol.breadcrumbs{
   line-height: 20px;
   text-align: center;
   color: inherit;
+  height: 48px;
 }
 
 .select-control{

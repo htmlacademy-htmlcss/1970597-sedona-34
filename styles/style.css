@@ -33,6 +33,17 @@ body{
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container{
   flex-grow: 1;
 }
@@ -40,10 +51,13 @@ body{
 /* Header navigation */
 .main-nav{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .main-nav-list, .nav-user{
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 430px;
@@ -53,9 +67,14 @@ body{
 .nav-user{
   max-width: 250px;
   margin-left: auto;
+  padding: 20px 17px;
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
 .main-nav-link{
+  display: block;
+  padding: 20px 17px;
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
@@ -75,6 +94,10 @@ body{
   background-color: #756157;
 }
 
+.nav-user, .nav-user-link{
+  min-width: 18px;
+  min-height: 18px;
+}
 .main-logo-link{
   width: 139px;
   margin-right: 30px;

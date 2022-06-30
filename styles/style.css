@@ -105,6 +105,11 @@ body{
 
 /* Стили для главной части */
 
+.welcome-img{
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
 .page-container{
   width: 1200px;
   margin: 0 auto;
@@ -125,17 +130,29 @@ body{
 }
 
 /* Описание */
+.description{
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .description-title{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 63px;
+  margin-bottom: 31px;
 }
 
 .description-reasons{
   text-align: center;
   color: #333333;
+  margin-top: 0;
+  margin-bottom: 90px;
+}
+
+.desctiption-container{
+  height: 282px;
 }
 
 /* Причины */
@@ -161,6 +178,7 @@ body{
 }
 
 .advantages-reason{
+  height: 384px;
   width: 400px;
 }
 .advantages-reason-list{
@@ -180,6 +198,8 @@ body{
 }
 
 .advantages-title{
+  margin-top: 92px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -187,11 +207,20 @@ body{
   text-transform: uppercase;
 }
 
+.advantages-description-city, .advantages-description-bridge{
+  margin-top: 0;
+  margin-bottom: 92px;
+}
+
 .advantages-description, .advantages-number{
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
 
+.advantages-number{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages-item-housing, .advantages-item-souvenirs{
@@ -214,9 +243,22 @@ body{
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 182px;
+  margin-bottom: 30px;
 }
 
+.advantages-point-description{
+  margin-top: 0;
+  margin-bottom: 81px;
+}
 
+.advantages-title-square, .advantages-title-road, .advantages-title-tourists{
+  margin-top: 102px;
+}
+.advantages-description-square, .advantages-description-road, .advantages-description-tourists{
+  margin-top: 0;
+  margin-bottom: 102px;
+}
 
 .advantages-item-square, .advantages-item-tourists{
   background-color: rgba(131, 179, 211, 0.12);
@@ -226,16 +268,27 @@ body{
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+/* Поиск гостиниц */
+.hotel-search{
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 417px;
+}
+
 .hotel-search-title{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 91px;
+  margin-bottom: 0;
 }
 
 .hotel-search-instruction{
   text-align: center;
+  margin-top: 29px;
+  margin-bottom: 56px;;
 }
 
 .hotel-search-link{
@@ -244,16 +297,25 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 93px;
+  height: 60px;
+  width: 574px;
 }
 
 .subscribe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image:url(../images/background-blur.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
+  height: 411px;
 }
 
 .subscribe-title{
+  margin-top: 94px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -265,6 +327,14 @@ body{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-top: 29px;
+  margin-bottom: 46px;
+}
+
+.email-form{
+  margin-top: 0;
+  margin-bottom: 94px;
+  height: 60px;
 }
 
 .footer-contacts-phone{

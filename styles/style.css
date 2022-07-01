@@ -376,7 +376,9 @@ body{
 }
 
 /* Стили каталога */
+
 .inner-header{
+  margin-top: 0;
   background-image: url("../images/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -384,16 +386,30 @@ body{
   /* Цвет для того, чтобы видеть где заканчивается контейнер */
   background-color: rgba(5, 23, 35, 0.5);
 }
+
 .inner-header-title{
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  padding-top: 35px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 70px;
 }
 
 ol.breadcrumbs{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
   list-style: none;
   font-size: 16px;
   line-height: 21px;
+  list-style-type: none;
+}
+
+.breadcrumbs-item{
+margin-right: 25px;
 }
 
 .catalog-filter{
@@ -401,8 +417,10 @@ ol.breadcrumbs{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 35px 70px 70px 70px;
+  padding: 0px 70px 70px 70px;
+  margin-top: 40px;
 }
+
 .hotel-filter-title{
   font-weight: 700;
   font-size: 20px;
@@ -453,6 +471,17 @@ ol.breadcrumbs{
 }
 
 /* Раздел с результатами поиска */
+.search-results{
+  margin-top: 5px;
+}
+
+.sorting-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 56px;
+}
 
 .search-results-title{
   font-weight: 700;
@@ -460,6 +489,27 @@ ol.breadcrumbs{
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-top:7px;
+  margin-bottom: 4px;
+  margin-right: 190px;
+  margin-left: 73px;
+}
+
+.sorting-buttons-group{
+  margin-left: 78px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-icons{
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  /* Граница, чтобы видеть кнопки, потом нужно убрать */
+  border: 1px solid black;
+}
+.button-icons:last-child{
+  margin-right: 0;
 }
 
 .hotel-list{
@@ -502,11 +552,30 @@ ol.breadcrumbs{
   text-transform: uppercase;
 }
 
+.pagination{
+  display: flex;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
 .pagination-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  margin-left: 73px;
+}
+.pagination-item:not(:last-child) {
+  padding-right: 8px;
 }
 
 .pagination-link{
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 22px;
   background-color:#82B3D3;
   border: 1px solid #82B3D3;
   border-radius: 4px;
@@ -515,6 +584,10 @@ ol.breadcrumbs{
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
+}
+
+.pagination-link:last-child{
+  padding: 12px 18px;
 }
 
 .pagination-current{
@@ -528,12 +601,25 @@ ol.breadcrumbs{
   text-decoration: none;
 }
 
+.select-wrapper{
+  margin-left: 270px;
+  margin-right: 71px;
+}
 .hotels-on-page-text{
   font-size: 18px;
   line-height: 21px;
 }
+/* Подписка в каталоге */
+.subscribe-catalog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 411px;
+}
 
 .subscribe-title-catalog{
+  margin-top: 94px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -542,6 +628,9 @@ ol.breadcrumbs{
 }
 
 .subscribe-text-catalog{
+  text-align: center;
+  margin-top: 29px;
+  margin-bottom: 46px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;

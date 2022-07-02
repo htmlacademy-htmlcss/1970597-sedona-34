@@ -51,8 +51,11 @@ body{
 /* Header navigation */
 .main-nav{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.main-nav-lisy{
+  width: 430px;
 }
 
 .main-nav-list, .nav-user{
@@ -60,7 +63,6 @@ body{
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 430px;
   list-style: none;
 }
 
@@ -94,10 +96,6 @@ body{
   background-color: #756157;
 }
 
-.nav-user, .nav-user-link{
-  min-width: 18px;
-  min-height: 18px;
-}
 .main-logo-link{
   width: 139px;
   margin-right: 30px;
@@ -134,25 +132,25 @@ body{
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.desctiption-container{
+  padding-top: 63px;
+  padding-bottom: 90px;
+}
 .description-title{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 63px;
+  margin: 0;
   margin-bottom: 31px;
 }
 
 .description-reasons{
   text-align: center;
   color: #333333;
-  margin-top: 0;
-  margin-bottom: 90px;
-}
-
-.desctiption-container{
-  height: 282px;
+  margin:0;
 }
 
 /* Причины */
@@ -178,9 +176,9 @@ body{
 }
 
 .advantages-reason{
-  height: 384px;
-  width: 400px;
+  padding: 80px 85px 81px;
 }
+
 .advantages-reason-list{
   list-style: none;
   display: flex;
@@ -191,15 +189,15 @@ body{
 }
 .advantages-item-block{
   margin: 0;
-  padding: 0;
+  padding: 92px 85px;
   background-color: #82B3D3;
   color:#ffffff;
-  width: 400px;
 }
 
 .advantages-title{
-  margin-top: 92px;
-  margin-bottom: 0;
+  margin:0;
+  margin-bottom: 30px;
+  width: 230px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -208,8 +206,7 @@ body{
 }
 
 .advantages-description-city, .advantages-description-bridge{
-  margin-top: 0;
-  margin-bottom: 92px;
+  margin: 0;
 }
 
 .advantages-description, .advantages-number{
@@ -219,7 +216,7 @@ body{
 }
 
 .advantages-number{
-  margin-top: 30px;
+  margin:0;
   margin-bottom: 30px;
 }
 
@@ -243,21 +240,21 @@ body{
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 182px;
+  margin: 0;
   margin-bottom: 30px;
 }
 
 .advantages-point-description{
-  margin-top: 0;
-  margin-bottom: 81px;
+  width: 230px;
+  margin: 0;
 }
 
 .advantages-title-square, .advantages-title-road, .advantages-title-tourists{
-  margin-top: 102px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 .advantages-description-square, .advantages-description-road, .advantages-description-tourists{
-  margin-top: 0;
-  margin-bottom: 102px;
+  margin:0;
 }
 
 .advantages-item-square, .advantages-item-tourists{
@@ -270,9 +267,8 @@ body{
 
 /* Поиск гостиниц */
 .hotel-search{
-  margin-top: 0;
-  margin-bottom: 0;
-  height: 417px;
+  margin: 0;
+  padding: 91px 313px 93px;
 }
 
 .hotel-search-title{
@@ -281,23 +277,24 @@ body{
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 91px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .hotel-search-instruction{
   text-align: center;
-  margin-top: 29px;
+  width: 592px;
+  margin: 0;
   margin-bottom: 56px;;
 }
 
 .hotel-search-link{
+  padding: 12px 15px;;
   background-color: #756157;
   color:#FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 93px;
   height: 60px;
   width: 574px;
 }
@@ -310,12 +307,12 @@ body{
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
-  height: 411px;
+  padding: 94px 200px;
 }
 
 .subscribe-title{
-  margin-top: 94px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -327,15 +324,10 @@ body{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-top: 29px;
+  margin: 0;
   margin-bottom: 46px;
 }
 
-.email-form{
-  margin-top: 0;
-  margin-bottom: 94px;
-  height: 60px;
-}
 
 /* Флексы для футера */
 
@@ -343,13 +335,13 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 40px 70px 30px;
 }
 
 .footer-socials-list{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -371,8 +363,8 @@ body{
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* Стили каталога */

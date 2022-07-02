@@ -377,23 +377,22 @@ body{
   color: #ffffff;
   /* Цвет для того, чтобы видеть где заканчивается контейнер */
   background-color: rgba(5, 23, 35, 0.5);
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title{
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  padding-top: 35px;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 10px;
-  margin-left: 70px;
 }
 
 ol.breadcrumbs{
   display: flex;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
-  margin-left: 70px;
   list-style: none;
   font-size: 16px;
   line-height: 21px;
@@ -409,8 +408,11 @@ margin-right: 25px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 70px 70px 70px;
-  margin-top: 40px;
+}
+
+.hotel-filter-group{
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-filter-title{
@@ -463,16 +465,12 @@ margin-right: 25px;
 }
 
 /* Раздел с результатами поиска */
-.search-results{
-  margin-top: 5px;
-}
 
 .sorting-container{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 56px;
+  padding: 50px 71px 56px 73px;
 }
 
 .search-results-title{
@@ -481,12 +479,12 @@ margin-right: 25px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin-top:7px;
-  margin-bottom: 4px;
-  margin-right: 190px;
-  margin-left: 73px;
+  margin: 0;
 }
 
+.select-wrapper{
+  margin-left: 190px;
+}
 .sorting-buttons-group{
   margin-left: 78px;
   display: flex;
@@ -546,9 +544,7 @@ margin-right: 25px;
 
 .pagination{
   display: flex;
-  padding: 0;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  padding: 30px 71px 25px 73px;
 }
 
 .pagination-list{
@@ -556,7 +552,7 @@ margin-right: 25px;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 73px;
+  margin: 0;
 }
 .pagination-item:not(:last-child) {
   padding-right: 8px;
@@ -593,25 +589,26 @@ margin-right: 25px;
   text-decoration: none;
 }
 
-.select-wrapper{
+.select-hotels-wrapper{
   margin-left: 270px;
-  margin-right: 71px;
 }
+
 .hotels-on-page-text{
   font-size: 18px;
   line-height: 21px;
+  margin-right: 51px;
 }
 /* Подписка в каталоге */
 .subscribe-catalog{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 411px;
+  padding: 94px 200px;
 }
 
 .subscribe-title-catalog{
-  margin-top: 94px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -620,9 +617,9 @@ margin-right: 25px;
 }
 
 .subscribe-text-catalog{
-  text-align: center;
-  margin-top: 29px;
+  margin: 0;
   margin-bottom: 46px;
+  text-align: center;
   font-size: 22px;
   line-height: 26px;
   text-align: center;

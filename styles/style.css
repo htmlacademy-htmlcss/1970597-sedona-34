@@ -86,6 +86,7 @@ body{
 }
 
 .nav-user-want{
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -94,6 +95,9 @@ body{
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
+  border: none;
+  border-radius: 4px;
+  padding: 9px 15px 9px;
 }
 
 .main-logo-link{
@@ -268,7 +272,7 @@ body{
 /* Поиск гостиниц */
 .hotel-search{
   margin: 0;
-  padding: 91px 313px 93px;
+  padding: 91px 20px 93px;
 }
 
 .hotel-search-title{
@@ -285,18 +289,23 @@ body{
   text-align: center;
   width: 592px;
   margin: 0;
-  margin-bottom: 56px;;
+  margin-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hotel-search-link{
+  display: block;
   padding: 12px 15px;;
   background-color: #756157;
   color:#FFFFFF;
+  line-height: 36px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  height: 60px;
   width: 574px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe{
@@ -486,9 +495,9 @@ margin-right: 25px;
   margin-left: 190px;
 }
 .sorting-buttons-group{
+  width: 160px;
   margin-left: 78px;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .button-icons{

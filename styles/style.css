@@ -512,7 +512,18 @@ margin-right: 25px;
 }
 
 .hotel-list{
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px;
+  row-gap: normal;
+  padding-left: 73px;
+  padding-right: 71px;
+  margin: 0;
   list-style: none;
+}
+
+.product-card{
+  padding: 20px;
 }
 
 .product-card-title-link{

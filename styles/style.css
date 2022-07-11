@@ -49,6 +49,10 @@ body{
 }
 
 /* Header navigation */
+.page-header{
+  padding-right: 70px;
+  padding-left: 70px;
+}
 .main-nav{
   display: flex;
   justify-content: space-between;

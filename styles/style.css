@@ -49,6 +49,10 @@ body{
 }
 
 /* Header navigation */
+.page-header{
+  padding-right: 70px;
+  padding-left: 70px;
+}
 .main-nav{
   display: flex;
   justify-content: space-between;
@@ -86,6 +90,7 @@ body{
 }
 
 .nav-user-want{
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -94,6 +99,9 @@ body{
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
+  border: none;
+  border-radius: 4px;
+  padding: 9px 15px 9px;
 }
 
 .main-logo-link{
@@ -268,7 +276,7 @@ body{
 /* Поиск гостиниц */
 .hotel-search{
   margin: 0;
-  padding: 91px 313px 93px;
+  padding: 91px 20px 93px;
 }
 
 .hotel-search-title{
@@ -285,18 +293,23 @@ body{
   text-align: center;
   width: 592px;
   margin: 0;
-  margin-bottom: 56px;;
+  margin-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hotel-search-link{
+  display: block;
   padding: 12px 15px;;
   background-color: #756157;
   color:#FFFFFF;
+  line-height: 36px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  height: 60px;
   width: 574px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe{
@@ -486,9 +499,9 @@ margin-right: 25px;
   margin-left: 190px;
 }
 .sorting-buttons-group{
+  width: 160px;
   margin-left: 78px;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .button-icons{
@@ -503,10 +516,39 @@ margin-right: 25px;
 }
 
 .hotel-list{
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px;
+  row-gap: normal;
+  padding-left: 73px;
+  padding-right: 71px;
+  margin: 0;
   list-style: none;
 }
 
+.product-card{
+  padding: 20px;
+}
+
+.product-card-content{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+  padding-top: 16px;
+}
+
+.product-card-image{
+  padding-bottom: 16px;
+}
+
+.product-card-title{
+  margin: 0;
+}
+
 .product-card-title-link{
+  margin-top: 16px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;

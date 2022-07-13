@@ -264,7 +264,35 @@ body{
   margin-bottom: 30px;
 }
 
+.advantages-icon::before{
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+}
+
+.icon-house::before{
+  background-image:url(/images/house.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 72px;
+}
+
+.icon-burger::before{
+  background-image:url(/images/food.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+ height: 70px;
+}
+
+.icon-present::before{
+  background-image:url(/images/present.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 76px;
+}
+
 .advantages-item-housing, .advantages-item-souvenirs{
+  display: block;
   background-color: rgba(131, 179, 211, 0.12);
   font-size: 18px;
   line-height: 21px;
@@ -272,6 +300,7 @@ body{
 }
 
 .advantages-item-food{
+  display: block;
   background-color: #FFFFFF;
   font-size: 18px;
   line-height: 21px;

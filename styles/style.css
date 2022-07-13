@@ -417,7 +417,7 @@ body{
 
 .page-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 40px 70px 30px;
 }
@@ -434,25 +434,30 @@ body{
   width: 47px;
   height: 40px;
   display: block;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .footer-socials-item:nth-child(3n) {
   margin-right: 0;
 }
 
-/* .socials-button-vk{
-  background-image:url(../images/footer/vk-logo.svg);
-  background-repeat: no-repeat;
+.socials-link-vk{
+  background-image:url(/images/footer/vk-logo.svg);
 }
 
-.socials-button-tg{
-  background-image: url(../images/footer/telegram-logo.svg);
+.socials-link-tg{
+  background-image: url(/images/footer/telegram-logo.svg);
 }
-.socials-button-yt{
-  background-image: url(../images/footer/youtube-logo.svg);
-} */
+.socials-link-yt{
+  background-image: url(/images/footer/youtube-logo.svg);
+}
+
+.socials-link{
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .footer-contacts-phone{
   color:#000000;

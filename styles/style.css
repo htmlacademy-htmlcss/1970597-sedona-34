@@ -16,7 +16,6 @@
 
 html{
   height: 100%;
-
 }
 
 body{
@@ -56,16 +55,17 @@ body{
   padding-left: 70px;
 }
 
-.main-nav{
-  display: flex;
-  justify-content: space-between;
-}
 
 .main-nav-list{
-  width: 430px;
+  width: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.main-nav-list, .nav-user{
+.main-nav{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -74,16 +74,25 @@ body{
 }
 
 .nav-user{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   max-width: 250px;
   margin-left: auto;
-  padding: 20px 17px;
+  padding: 14px 17px;
+  margin: 0;
   /* display: flex;
   justify-content: space-evenly; */
 }
 
 .main-nav-link{
   display: block;
-  padding: 20px 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  margin-right: 34px;
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
@@ -110,15 +119,25 @@ body{
 
 .nav-user-link{
   position: relative;
+  display: block;
+  height: 19px;
+  width: 19px;
 }
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #000000;
+
+.nav-user .nav-user-item:nth-child(1) .nav-user-link{
+  background-image:url(/images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 19px;
+}
+
+.nav-user .nav-user-item:nth-child(2) .nav-user-link{
+  background-image:url(/images/favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 19px;
 }
 
 .main-logo-link{
@@ -374,19 +393,33 @@ body{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .footer-socials-item{
   width: 47px;
   height: 40px;
-  margin-right: 8px;
-  margin-bottom: 8px
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-socials-item:nth-child(3n) {
   margin-right: 0;
 }
+
+/* .socials-button-vk{
+  background-image:url(../images/footer/vk-logo.svg);
+  background-repeat: no-repeat;
+}
+
+.socials-button-tg{
+  background-image: url(../images/footer/telegram-logo.svg);
+}
+.socials-button-yt{
+  background-image: url(../images/footer/youtube-logo.svg);
+} */
 
 .footer-contacts-phone{
   color:#000000;

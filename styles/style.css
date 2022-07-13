@@ -267,7 +267,6 @@ body{
 .advantages-icon::before{
   content: "";
   display: block;
-  margin-bottom: 30px;
 }
 
 .icon-house::before{
@@ -275,13 +274,15 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   height: 72px;
+  margin-bottom: 30px;
 }
 
 .icon-burger::before{
   background-image:url(/images/food.svg);
   background-repeat: no-repeat;
   background-position: center;
- height: 70px;
+  height: 70px;
+  margin-bottom: 31px;
 }
 
 .icon-present::before{
@@ -289,6 +290,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   height: 76px;
+  margin-bottom: 28px;
 }
 
 .advantages-item-housing, .advantages-item-souvenirs{
@@ -332,10 +334,12 @@ body{
 
 .advantages-item-square, .advantages-item-tourists{
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 103px 85px 102px;
 }
 
 .advantages-item-road{
   background-color: rgba(131, 179, 211, 0.2);
+  padding: 103px 85px 102px;
 }
 
 /* Поиск гостиниц */

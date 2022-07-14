@@ -48,13 +48,16 @@ body{
 }
 .page-container{
   background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 1200px;
+  margin: 0 auto;
 }
+
 /* Header navigation */
 .page-header{
   padding-right: 70px;
   padding-left: 70px;
 }
-
 
 .main-nav-list{
   width: 390px;
@@ -63,14 +66,30 @@ body{
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: 47px;
 }
 
-.main-nav{
+.navigation{
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
+  padding: 14px 0px;
+}
+
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 139px;
+}
+
+.navigation-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .nav-user{
@@ -81,16 +100,13 @@ body{
   list-style: none;
   max-width: 250px;
   margin-left: auto;
-  padding: 14px 17px;
   margin: 0;
-  /* display: flex;
-  justify-content: space-evenly; */
+  align-items: center;
 }
 
 .main-nav-link{
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 0;
   margin: 0;
   margin-right: 34px;
   font-weight: 700;
@@ -140,9 +156,12 @@ body{
   height: 19px;
 }
 
-.main-logo-link{
-  width: 139px;
-  margin-right: 30px;
+.nav-user-item:nth-child(1){
+  padding-right: 23px;
+}
+
+.nav-user-item:nth-child(2){
+  padding-right: 32px;
 }
 
 /* Стили для главной части */
@@ -152,10 +171,6 @@ body{
   padding-bottom: 82px;
 }
 
-.page-container{
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .welcome-img{
   display: block;
@@ -270,7 +285,7 @@ body{
 }
 
 .icon-house::before{
-  background-image:url(/images/house.svg);
+  background-image:url(../images/house.svg);
   background-repeat: no-repeat;
   background-position: center;
   height: 72px;
@@ -278,7 +293,7 @@ body{
 }
 
 .icon-burger::before{
-  background-image:url(/images/food.svg);
+  background-image:url(../images/food.svg);
   background-repeat: no-repeat;
   background-position: center;
   height: 70px;
@@ -699,6 +714,7 @@ margin-right: 25px;
   padding: 12px 22px;
   background-color:#82B3D3;
   border: 1px solid #82B3D3;
+  border: none;
   border-radius: 4px;
   color:#FFFFFF;
   font-weight: 700;
@@ -709,6 +725,7 @@ margin-right: 25px;
 
 .pagination-link:last-child{
   padding: 12px 18px;
+  text-align: center;
 }
 
 .pagination-current{

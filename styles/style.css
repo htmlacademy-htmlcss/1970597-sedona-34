@@ -53,13 +53,28 @@ body{
   margin: 0 auto;
 }
 
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 /* Header navigation */
 .page-header{
   padding-right: 70px;
   padding-left: 70px;
 }
 
-.main-nav-list{
+.navigation-list{
   width: 390px;
   display: flex;
   flex-wrap: wrap;
@@ -77,7 +92,6 @@ body{
   margin: 0;
   padding: 0;
   list-style: none;
-  padding: 14px 0px;
 }
 
 .navigation-wrapper {
@@ -92,7 +106,7 @@ body{
   top: 0;
 }
 
-.nav-user{
+.navigation-user{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -104,20 +118,50 @@ body{
   align-items: center;
 }
 
-.main-nav-link{
-  display: block;
-  padding: 0;
-  margin: 0;
+.navigation-item{
   margin-right: 34px;
+}
+.navigation-item:last-child{
+  margin: 0;
+}
+
+.navigation-link{
+  position: relative;
+  display: block;
+  padding: 20px 0 19px 0;
+  line-height: 26px;
   font-weight: 700;
-  font-size: 20px;
+  text-align: center;
   text-decoration: none;
+  margin: 0;
+  font-size: 20px;
   text-transform: capitalize;
   text-align: center;
   color: inherit;
+  text-decoration: none;
 }
 
-.nav-user-want{
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link-current::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background-color: #756257;
+}
+
+.navigation-link:active{
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-user-want{
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
@@ -133,14 +177,14 @@ body{
   cursor: pointer;
 }
 
-.nav-user-link{
+.navigation-user-link{
   position: relative;
   display: block;
   height: 19px;
   width: 19px;
 }
 
-.nav-user .nav-user-item:nth-child(1) .nav-user-link{
+.navigation-user .navigation-user-item:nth-child(1) .navigation-user-link{
   background-image:url(/images/search.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -148,7 +192,7 @@ body{
   height: 19px;
 }
 
-.nav-user .nav-user-item:nth-child(2) .nav-user-link{
+.navigation-user .navigation-user-item:nth-child(2) .navigation-user-link{
   background-image:url(/images/favorite.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -156,11 +200,11 @@ body{
   height: 19px;
 }
 
-.nav-user-item:nth-child(1){
+.navigation-user-item:nth-child(1){
   padding-right: 23px;
 }
 
-.nav-user-item:nth-child(2){
+.navigation-user-item:nth-child(2){
   padding-right: 32px;
 }
 
@@ -178,12 +222,11 @@ body{
 }
 
 .welcome{
-  background-image: url(../images/index-background.jpg), url(../images/divider.svg);
+  background-image: url(../images/divider.svg), url(../images/index-background.jpg);
   background-size: 100% auto;
-  background-repeat: no-repeat;
-  color: grey;
-  background-color: #ffffff;
-  height: 485px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom;
+  color: #FFFFFF;
 }
 
 /* Описание */
@@ -425,6 +468,25 @@ body{
   text-align: center;
   margin: 0;
   margin-bottom: 46px;
+}
+
+.subscribe-button {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 12px 23px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #68A2CA;
 }
 
 

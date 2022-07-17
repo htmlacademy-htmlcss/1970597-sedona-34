@@ -11,27 +11,30 @@
   <div class="page-container">
     <header class="page-header">
       <nav class="navigation">
-        <a class="main-logo-link" href="index.html"><img class="main-logo" src="images/main-logo.svg" width="139"
-            height="70" alt="Ссылка на главную страницу Седона."></a>
-        <ul class="main-nav-list">
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="#">О Седоне</a>
-          </li>
-          <li class="main-nav-item">
-            <a class="main-nav-link main-nav-link-current" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
+        <div class="navigation-wrapper">
+          <a class="navigation-logo" href="#">
+            <img class="main-logo" src="images/main-logo.svg" width="139" height="70" alt="Ссылка на главную страницу Седона.">
+          </a>
+          <ul class="main-nav-list nav-pages">
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">О Седоне</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
         <ul class="nav-user">
           <li class="nav-user-item">
-            <a class="nav-user-search" href="#">
+            <a class="nav-user-link nav-user-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="nav-user-item">
-            <a class="nav-user-liked" href="#">
+            <a class="nav-user-link nav-user-liked" href="#">
               <span class="visually-hidden">Понравившиеся</span>
             </a>
           </li>

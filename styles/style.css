@@ -588,7 +588,8 @@ margin-right: 25px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 50px 71px 56px 73px;
+  justify-content: space-between;
+  padding: 50px 71px 56px 72px;
 }
 
 .search-results-title{
@@ -598,27 +599,53 @@ margin-right: 25px;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-right: 190px;
+  margin-right: 191px;
 }
 
 .select-wrapper{
-  margin-left: 190px;
+  margin-right: 78px;
 }
 .sorting-buttons-group{
   width: 160px;
-  margin-left: 78px;
   display: flex;
 }
 
 .button-icons{
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   margin-right: 8px;
   /* Граница, чтобы видеть кнопки, потом нужно убрать */
-  border: 1px solid black;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-icons.current{
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 .button-icons:last-child{
   margin: 0;
+}
+
+.small-icons{
+  background-image: url(../images/layout-icons/icon-table.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: center;
+}
+
+.big-icons{
+  background-image: url(../images/layout-icons/icon-slideshow.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: center;
+}
+
+.list-with-info{
+  background-image: url(../images/layout-icons/icon-list.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: center;
 }
 
 .hotel-list{

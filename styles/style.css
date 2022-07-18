@@ -554,34 +554,30 @@ body {
   list-style-type: none;
 }
 
-.footer-socials-item {
-  width: 47px;
-  height: 40px;
-  display: block;
-}
-
 .footer-socials-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.socials-link-vk {
-  background-image: url(/images/footer/vk-logo.svg);
-}
-
-.socials-link-tg {
-  background-image: url(/images/footer/telegram-logo.svg);
-}
-
-.socials-link-yt {
-  background-image: url(/images/footer/youtube-logo.svg);
-}
-
 .socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 12px;
+}
+
+.socials-icon {
+  fill: #83B3D3;
   display: block;
-  width: 47px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.socials-icon:hover{
+  fill: #68A2CA;
+}
+.socials-icon:focus{
+  fill: #68A2CA;
+}
+.socials-icon:active{
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts-phone {
@@ -593,6 +589,34 @@ body {
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+.academy-logo{
+  fill: #000000;
+}
+
+.academy-address-link:hover .academy-logo {
+  fill: #756157;
+}
+
+.academy-address-link:focus .academy-logo {
+  fill: #756157;
+  outline: none;
+}
+
+.academy-address-link:active .academy-logo {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Стили каталога */

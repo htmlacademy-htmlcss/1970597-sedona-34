@@ -908,13 +908,45 @@ ol.breadcrumbs {
 }
 
 .hotel-rating {
-  background: #F2F2F2;
-  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #F2F2F2;
+  width: 140px;
   text-align: center;
-  text-decoration: none;
+  margin: 0;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
   text-transform: uppercase;
+}
+.hotel-stars-4{
+  display: block;
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  width: 88px;
+  height: 17px;
+  margin-top: 10px;
+}
+
+.hotel-stars-3{
+  display: block;
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  width: 66px;
+  height: 17px;
+  margin-top: 10px;
+}
+
+.hotel-stars-2{
+  display: block;
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  width: 42px;
+  height: 17px;
+  margin-top: 10px;
 }
 
 .pagination {

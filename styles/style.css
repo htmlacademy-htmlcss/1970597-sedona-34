@@ -112,13 +112,12 @@ body {
 .navigation-wrapper {
   display: flex;
   align-items: center;
-  padding-left: 139px;
 }
 
 .navigation-logo {
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: block;
+  margin-bottom: -10px;
+  position: relative;
 }
 
 .navigation-user {
@@ -201,7 +200,7 @@ body {
 }
 
 .navigation-user .navigation-user-item:nth-child(1) .navigation-user-link {
-  background-image: url(/images/search.svg);
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 19px;
@@ -209,7 +208,7 @@ body {
 }
 
 .navigation-user .navigation-user-item:nth-child(2) .navigation-user-link {
-  background-image: url(/images/favorite.svg);
+  background-image: url("../images/favorite.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 19px;
@@ -217,7 +216,7 @@ body {
 }
 
 .navigation-user-item:nth-child(1) {
-  padding-right: 23px;
+  margin-right: 23px;
 }
 
 .navigation-user-item:nth-child(2) {
@@ -238,7 +237,7 @@ body {
 }
 
 .welcome {
-  background-image: url(../images/divider.svg), url(../images/index-background.jpg);
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom;
@@ -342,13 +341,12 @@ body {
   margin-bottom: 30px;
 }
 
-.advantages-icon::before {
-  content: "";
-  display: block;
-}
 
 .icon-house::before {
-  background-image: url(../images/house.svg);
+  content: "";
+  display: block;
+  background-image: url("../images/house.svg");
+  background-size: 75px 72px;
   background-repeat: no-repeat;
   background-position: center;
   height: 72px;
@@ -356,15 +354,21 @@ body {
 }
 
 .icon-burger::before {
-  background-image: url(../images/food.svg);
+  content: "";
+  display: block;
+  background-image: url("../images/food.svg");
+  background-size: 74px 70px;
   background-repeat: no-repeat;
   background-position: center;
-  height: 70px;
+  height: 72px;
   margin-bottom: 31px;
 }
 
 .icon-present::before {
-  background-image: url(/images/present.svg);
+  content: "";
+  display: block;
+  background-image: url("../images/present.svg");
+  background-size: 64px 76px;
   background-repeat: no-repeat;
   background-position: center;
   height: 76px;
@@ -473,7 +477,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../images/background-blur.jpg);
+  background-image: url("../images/background-blur.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -533,7 +537,7 @@ body {
   background-color: #F2F2F2;
   border: none;
   border-radius: 10px 0 0 10px;
-  padding: 20px 491px 19px 22px;
+  padding: 20px 0 19px 22px;
 }
 
 
@@ -547,6 +551,7 @@ body {
 }
 
 .footer-socials-list {
+  width: 142px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -642,6 +647,7 @@ body {
 
 ol.breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
@@ -656,6 +662,22 @@ ol.breadcrumbs {
   padding-left: 0;
 }
 
+.breadcrumbs-item:last-child{
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:first-child)::before{
+  content: "";
+  display: block;
+  background-image: url("../images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 6px;
+  height: 7px;
+  margin-right: 10px;
+}
+
 .breadcrumbs-link {
   text-decoration: none;
   cursor: pointer;
@@ -664,6 +686,7 @@ ol.breadcrumbs {
 }
 
 .breadcrumbs-item {
+  display: block;
   margin-right: 10px;
   padding-left: 0;
 }
@@ -795,7 +818,7 @@ ol.breadcrumbs {
   color: #333333;
   background-color: #ffffff;
   appearance: none;
-  background-image: url(../images/down-arror.svg);
+  background-image: url("../images/down-arror.svg");
   background-repeat: no-repeat;
   background-position: right 13px center;
   border: 2px solid #E5E5E5;
@@ -893,16 +916,17 @@ ol.breadcrumbs {
   margin-top: 16px;
 }
 
-.product-card-image {
-  padding-bottom: 16px;
+.product-card-link{
+  display: block;
+  margin-bottom: 16px;
 }
 
-.product-card-title {
+.product-card-title{
   margin: 0;
 }
 
 .product-card-title-link {
-  margin-top: 16px;
+  display: block;
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 24px;
@@ -1005,7 +1029,7 @@ ol.breadcrumbs {
 }
 
 .pagination-item:not(:last-child) {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 .pagination-link {
